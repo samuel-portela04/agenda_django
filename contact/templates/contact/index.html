@@ -1,7 +1,44 @@
 {% extends 'global/base.html' %}
 
 {% block content %}
-    {% for contact in contacts %}
-        {{ contact.first_name }} <br>
-    {% endfor %}
+    <div class="resposive_table">
+        <table class="contacts_table">
+            <caption class="table_caption">
+                Contacts
+            </caption>
+            <thead>
+                <tr class="table_row table_row_header">
+                    <th class="table_header">ID</th>
+                    <th class="table_header">FIRST NAME</th>
+                    <th class="table_header">LAST NAME</th>
+                    <th class="table_header">PHONE</th>
+                    <th class="table_header">EMAIL</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for contact in contacts %}
+                    <tr class="table_row">
+                        <td class="table_cel">
+                            <a class="table_link" href="#">
+                                {{contact.id}}
+                            </a>
+                        </td>
+                        <td class="table_cel">
+                            {{contact.first_name}}
+                        </td>
+                        <td class="table_cel">
+                            {{contact.last_name}}
+                        </td>
+                        <td class="table_cel">
+                            {{contact.phone}}
+                        </td>
+                        <td class="table_cel">
+                            {{contact.email}}
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 {% endblock content %}
