@@ -110,54 +110,54 @@ svg {
     border-radius: var(--default-border-radius);
 }
 
-.responsive_table {
+.responsive-table {
     width: 100%;
     overflow-x: auto;
 }
 
-.contacts_table {
+.contacts-table {
     width: 100%;
     min-width: var(--table-min-width);
     border-collapse: collapse;
 }
 
-.table_caption {
+.table-caption {
     font-size: var(--medium-font-size);
     font-weight: bold;
     padding: var(--spacing);
 }
 
-.table_row {
+.table-row {
     text-align: left;
     text-overflow: ellipsis;
     transition: background-color var(--transition-fast) ease-in-out;
 }
 
-.table_row:nth-of-type(2n) {
+.table-row:nth-of-type(2n) {
     background: var(--clr-dark-shadow-5);
 }
 
-.table_row:not(.table-row-header):hover {
+.table-row:not(.table-row-header):hover {
     background: var(--clr-dark-shadow-10);
 }
 
-.table_row_header {
+.table-row-header {
     background: var(--clr-light-gray);
     color: var(--clr-black);
 }
 
-.table_cel,
-.table_header {
+.table-cel,
+.table-header {
     padding: var(--spacing);
 }
 
-.table_link {
+.table-link {
     color: var(--link-dark-color);
     transition: color var(--transition-fast) ease-in-out;
     text-decoration: none;
 }
 
-.table_link:hover {
+.table-link:hover {
     color: var(--clr-black);
 }
 
