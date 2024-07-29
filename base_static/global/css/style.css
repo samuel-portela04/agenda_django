@@ -314,3 +314,44 @@ svg {
     filter: brightness(80%);
     box-shadow: 0 0 5px var(--link-dark-color);
 }
+
+.contact-links {
+    margin-block: calc(var(--small-font-size) * 2);
+    display: flex;
+    align-items: center;
+    gap: 0 var(--spacing);
+}
+
+.btn-link {
+    font-size: var(--small-font-size);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+    display: block;
+    line-height: var(--small-font-size);
+}
+
+.btn-delete {
+    font-size: var(--small-font-size);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+    display: block;
+    line-height: var(--small-font-size);
+    background: tomato;
+    color: white; /* Certifique-se de que o texto é visível */
+    border: none;
+    border-radius: 4px; /* Opcional: adicionar algum border radius */
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+}
+
+.btn-delete:hover {
+    filter: brightness(90%);
+}
+
+.btn-delete:focus,
+.btn-delete:active {
+    filter: brightness(80%);
+    box-shadow: 0 0 5px tomato;
+}
